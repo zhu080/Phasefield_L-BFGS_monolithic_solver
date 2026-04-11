@@ -5671,16 +5671,13 @@ namespace PhaseField
 } // namespace PhaseField
 
 
-int main(int argc, char* argv[])
+int main()
 {
 
   using namespace dealii;
 
-  if (argc != 2)
-    AssertThrow(false,
-    		ExcMessage("The number of arguments provided to the program has to be 2!"));
 
-  const unsigned int dim = std::stoi(argv[1]);
+  const unsigned int dim = 2;
   if (dim == 2 )
     {
       PhaseField::PhaseFieldMonolithicSolve<2> FEQ1Full("parameters.prm");
