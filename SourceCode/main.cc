@@ -6392,7 +6392,6 @@ int main()
 
   using namespace dealii;
 
-  // exercise: make some change in source code, please ignore
   const unsigned int dim = 2;
   if (dim == 2 )
     {
